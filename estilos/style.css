@@ -16,19 +16,22 @@ main{
     width: 100vw;
 }
 section#login{
-    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
     opacity: .8;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
 
-    overflow: hidden;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px ;
-    transition: border-radius 1s, width 1s, height 1s;
+    transition: width 1s, heigth 1s, float 1s;
+    transition-timing-function: ease;
 }
 section#login >div#imagem{
     display: block;
@@ -42,15 +45,8 @@ section#login >div#formulario{
     padding: 10px;
 }
 section#login:hover {
-    
-
-
-
-
-
-    background-color: white;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-   
+    border-radius: 50%;
+    width: 100px;
+    height: 100px ;
+    transition: border-radius 1s, width 1s, height 1s;
 }
